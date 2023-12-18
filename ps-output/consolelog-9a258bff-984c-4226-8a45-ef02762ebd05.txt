@@ -1,0 +1,135 @@
+Found 1 filters
+
+GRADLE VERSION 8.1.1
+
+ANDROID GRADLE PLUGIN VERSION Android Gradle Plugin version 8.1.1
+
+Using new ScopedArtifacts transform API
+
+:app:compileDebugJavaWithJavac
+
+warning: [options] source value 8 is obsolete and will be removed in a future release
+
+warning: [options] target value 8 is obsolete and will be removed in a future release
+
+warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+
+3 warnings
+
+:app:debugClassTransformTask
+
+Analyzing platform classes
+
+SDK version: android-34
+
+Trying SDK directory: C:\Users\Admin\AppData\Local\Android\Sdk
+
+Found android.jar in C:\Users\Admin\AppData\Local\Android\Sdk\platforms\android-34\android.jar
+
+Analyzed 5720 platform classes
+
+PSLogs: pinned for TaskImpl: kotlinx/coroutines/scheduling/CoroutineScheduler::createTask(Ljava/lang/Runnable;Lkotlinx/coroutines/scheduling/TaskContext;)Lkotlinx/coroutines/scheduling/Task;
+
+ClassTransform took 51844 ms
+
+:app:compileReleaseJavaWithJavac
+
+warning: [options] source value 8 is obsolete and will be removed in a future release
+
+warning: [options] target value 8 is obsolete and will be removed in a future release
+
+warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+
+3 warnings
+
+:app:lintVitalAnalyzeRelease
+
+:app:releaseClassTransformTask
+
+Analyzing platform classes
+
+SDK version: android-34
+
+Trying SDK directory: C:\Users\Admin\AppData\Local\Android\Sdk
+
+Found android.jar in C:\Users\Admin\AppData\Local\Android\Sdk\platforms\android-34\android.jar
+
+Analyzed 5720 platform classes
+
+PSLogs: pinned for TaskImpl: kotlinx/coroutines/scheduling/CoroutineScheduler::createTask(Ljava/lang/Runnable;Lkotlinx/coroutines/scheduling/TaskContext;)Lkotlinx/coroutines/scheduling/Task;
+
+ClassTransform took 53214 ms
+
+:app:lintVitalRelease
+
+D:\tictactoe-master\app\src\main\AndroidManifest.xml:16: Error: This class should provide a default constructor (a public constructor with no arguments) (com.example.tictactoe.ResultDialog) [Instantiatable]
+
+
+
+
+            android:name=".ResultDialog"
+
+
+
+
+                          ~~~~~~~~~~~~~
+
+
+
+
+D:\tictactoe-master\app\src\main\AndroidManifest.xml:16: Error: ResultDialog must extend android.app.Activity [Instantiatable]
+
+
+
+
+            android:name=".ResultDialog"
+
+
+
+
+                          ~~~~~~~~~~~~~
+
+
+
+
+
+
+
+   Explanation for issues of type "Instantiatable":
+
+
+
+
+   Activities, services, broadcast receivers etc. registered in the manifest
+
+
+
+
+   file (or for custom views, in a layout file) must be "instantiatable" by
+
+
+
+
+   the system, which means that the class must be public, it must have an
+
+
+
+
+   empty public constructor, and if it's an inner class, it must be a static
+
+
+
+
+   inner class.
+
+
+
+
+
+
+
+2 errors, 0 warnings
+
+
+
+

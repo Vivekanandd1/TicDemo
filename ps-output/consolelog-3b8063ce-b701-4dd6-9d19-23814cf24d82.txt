@@ -1,0 +1,8 @@
+Found 1 filters
+
+GRADLE VERSION 8.2
+
+ANDROID GRADLE PLUGIN VERSION Android Gradle Plugin version 8.2.0
+
+Using new ScopedArtifacts transform API
+

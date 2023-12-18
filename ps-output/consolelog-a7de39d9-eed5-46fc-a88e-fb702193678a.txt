@@ -1,0 +1,207 @@
+Found 1 filters
+
+GRADLE VERSION 8.1.1
+
+ANDROID GRADLE PLUGIN VERSION Android Gradle Plugin version 8.1.1
+
+Using new ScopedArtifacts transform API
+
+:app:debugClassTransformTask
+
+Analyzing platform classes
+
+SDK version: android-34
+
+Trying SDK directory: C:\Users\Admin\AppData\Local\Android\Sdk
+
+Found android.jar in C:\Users\Admin\AppData\Local\Android\Sdk\platforms\android-34\android.jar
+
+Analyzed 5720 platform classes
+
+PSLogs: pinned for TaskImpl: kotlinx/coroutines/scheduling/CoroutineScheduler::createTask(Ljava/lang/Runnable;Lkotlinx/coroutines/scheduling/TaskContext;)Lkotlinx/coroutines/scheduling/Task;
+
+ClassTransform took 46260 ms
+
+:app:mergeDexDebug
+
+:app:mergeDebugJniLibFolders 
+
+UP-TO-DATE
+
+:app:mergeDebugNativeLibs 
+
+NO-SOURCE
+
+:app:stripDebugDebugSymbols 
+
+NO-SOURCE
+
+:app:validateSigningDebug 
+
+UP-TO-DATE
+
+:app:writeDebugAppMetadata 
+
+UP-TO-DATE
+
+:app:writeDebugSigningConfigVersions 
+
+UP-TO-DATE
+
+:app:preReleaseBuild 
+
+UP-TO-DATE
+
+:app:dataBindingMergeDependencyArtifactsRelease 
+
+UP-TO-DATE
+
+:app:generateReleaseResValues 
+
+UP-TO-DATE
+
+:app:generateReleaseResources 
+
+UP-TO-DATE
+
+:app:mergeReleaseResources 
+
+UP-TO-DATE
+
+:app:packageReleaseResources 
+
+UP-TO-DATE
+
+:app:parseReleaseLocalResources 
+
+UP-TO-DATE
+
+:app:dataBindingGenBaseClassesRelease 
+
+UP-TO-DATE
+
+:app:javaPreCompileRelease 
+
+UP-TO-DATE
+
+:app:checkReleaseAarMetadata 
+
+UP-TO-DATE
+
+:app:mapReleaseSourceSetPaths 
+
+UP-TO-DATE
+
+:app:createReleaseCompatibleScreenManifests 
+
+UP-TO-DATE
+
+:app:extractDeepLinksRelease 
+
+UP-TO-DATE
+
+:app:processReleaseMainManifest 
+
+UP-TO-DATE
+
+:app:processReleaseManifest 
+
+UP-TO-DATE
+
+:app:processReleaseManifestForPackage 
+
+UP-TO-DATE
+
+:app:processReleaseResources 
+
+UP-TO-DATE
+
+:app:compileReleaseJavaWithJavac 
+
+UP-TO-DATE
+
+:app:extractProguardFiles 
+
+UP-TO-DATE
+
+:app:lintVitalAnalyzeRelease 
+
+UP-TO-DATE
+
+:app:lintVitalReportRelease 
+
+UP-TO-DATE
+
+:app:lintVitalRelease
+
+D:\tictactoe-master\app\src\main\AndroidManifest.xml:16: Error: This class should provide a default constructor (a public constructor with no arguments) (com.example.tictactoe.ResultDialog) [Instantiatable]
+
+
+
+
+            android:name=".ResultDialog"
+
+
+
+
+                          ~~~~~~~~~~~~~
+
+
+
+
+D:\tictactoe-master\app\src\main\AndroidManifest.xml:16: Error: ResultDialog must extend android.app.Activity [Instantiatable]
+
+
+
+
+            android:name=".ResultDialog"
+
+
+
+
+                          ~~~~~~~~~~~~~
+
+
+
+
+
+
+
+   Explanation for issues of type "Instantiatable":
+
+
+
+
+   Activities, services, broadcast receivers etc. registered in the manifest
+
+
+
+
+   file (or for custom views, in a layout file) must be "instantiatable" by
+
+
+
+
+   the system, which means that the class must be public, it must have an
+
+
+
+
+   empty public constructor, and if it's an inner class, it must be a static
+
+
+
+
+   inner class.
+
+
+
+
+
+
+
+2 errors, 0 warnings
+
+
+
+
